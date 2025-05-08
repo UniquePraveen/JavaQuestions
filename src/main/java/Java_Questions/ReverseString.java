@@ -15,11 +15,16 @@ public class ReverseString {
 
         // Using toCharArray() method to reverse the string
 
-        char[] ch = str.toCharArray();
-        int l = ch.length;
+//        char[] ch = str.toCharArray();
+//        int l = ch.length;
+//
+//        for (int i = l - 1; i >= 0; i--) {
+//            System.out.print(ch[i]);
+//        }
 
-        for (int i = l - 1; i >= 0; i--) {
-            System.out.print(ch[i]);
-        }
+        // StringBuzzer class to reverse the string
+
+        StringBuffer SB = new StringBuffer(str);
+        System.out.println(SB.reverse());
     }
 }

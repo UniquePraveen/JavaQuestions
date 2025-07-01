@@ -4,9 +4,9 @@ public class LargestNumber {
 
     public static void main(String[] args) {
 
-        int a = 100000;
-        int b = 2000000;
-        int c = 300000000;
+        int a = 30000;
+        int b = 20000;
+        int c = 3000000;
 
         // Way  - 01
 
@@ -29,10 +29,10 @@ public class LargestNumber {
 
         // Way - 02
 
-        int largest = a > b ? a : b;
-        int largest2 = largest > c ? largest : c;
+        int largest = (a > b) ? a : b;
+        int largest_1 = (largest > c) ? largest : c;
 
-        System.out.println("Max is: " + largest2);
+        System.out.println(largest_1);
 
     }
 }

@@ -10,20 +10,21 @@ public class StringDigit {
         System.out.println("Enter the String: ");
         String str = sc.nextLine();
 
-        char[] charArray = str.toCharArray();
+        char[] cha = str.toCharArray();
+
+        System.out.println(cha);
 
         int total = 0;
 
+        for (int i = 0; i < cha.length; i++) {
 
-        for (int i = 0; i < charArray.length; i++) {
+            if (Character.isDigit(cha[i])) {
 
-            if (Character.isDigit(charArray[i])) {
-
-                total += Character.getNumericValue(charArray[i]);
+                total += Character.getNumericValue(cha[i]);
             }
+
         }
 
-        System.out.println("Sum of present digit: " + total);
-
+        System.out.println("Total: " + total);
     }
 }

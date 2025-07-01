@@ -25,7 +25,7 @@ public class ReverseNum {
 
         }
 
-      //  System.out.println(rev);
+//        System.out.println(rev);
 
         // Way - 02
 

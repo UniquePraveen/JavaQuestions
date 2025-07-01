@@ -23,15 +23,14 @@ public class StringLength {
         // Way - 03
 
         char[] character = str.toCharArray();
+
+        //  System.out.println(character);
         int len1 = 0;
-        for(char ch : character){
+        for (char ch : character) {
             len1++;
         }
 
         System.out.println("String Length: " + len1);
-
-
-
 
 
     }

@@ -1,5 +1,7 @@
 package Java_Questions;
 
+import java.sql.SQLOutput;
+
 public class FibonnaciSeries {
 
     public static void main(String[] args) {
@@ -8,17 +10,20 @@ public class FibonnaciSeries {
         int s = 1;
 
 
-        for (int i = 0; i < 8; i++) {
+        System.out.println(f);
+        System.out.println(s);
 
-            System.out.print(f + " ");
+        for (int i = 1; i <= 10; i++) {
 
-            int t = f+s;
-
+            int a = f + s;
+            System.out.println(a);
             f = s;
-            s = t;
+            s = a;
+
 
 
         }
+
 
     }
 }

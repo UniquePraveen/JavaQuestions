@@ -30,7 +30,6 @@ public class Implement implements Interface {
 
         Implement im = new Implement();
 
-       
 
 
     }

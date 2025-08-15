@@ -9,21 +9,28 @@ public class ReverseString {
         String str = "Hello World";
 //
         for (int i = str.length() - 1; i >= 0; i--) {
-            System.out.print(str.charAt(i));
+            System.out.println(str.charAt(i));
         }
 
         // Using toCharArray() method to reverse the string
 
-//        char[] ch = str.toCharArray();
-//        int l = ch.length;
-//
-//        for (int i = l - 1; i >= 0; i--) {
-//            System.out.print(ch[i]);
-//        }
+        char[] ch = str.toCharArray();
+        int l = ch.length;
 
-        // StringBuzzer class to reverse the string
+        for (int i = l - 1; i >= 0; i--) {
+            System.out.println(ch[i]);
+        }
 
-//        StringBuffer SB = new StringBuffer(str);
-//        System.out.println(SB.reverse());
+        //     StringBuzzer class to reverse the string
+
+        StringBuffer SB = new StringBuffer(str);
+        System.out.println(SB.reverse());
+
+        // Append
+        SB.append(" I'm Praveen");
+
+        System.out.println(SB);
+
+
     }
 }
